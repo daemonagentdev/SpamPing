@@ -22,5 +22,6 @@ async def spam(interaction: nextcord.Interaction):
     for index in range(999999999999999999):
         await interaction.send(f"<@{userid}>")
         time.sleep(0.3)
+    await interaction.send(f"<@{userid}> Sent you all of the messages")
 
 bot.run(f'{tokenrunprogram}')
